@@ -1,23 +1,23 @@
 import React from 'react'
-import First from './First/First'
-import Second from './Second/Second'
-import Third from './third/Third'
-import Fourth from './fourth/Fourth'
+import Home from '@/pages/home/Home'
+import About from '@/pages/about/About'
+import Services from '@/pages/services/Services'
 
 function Index() {
   return (
     <div>
       <section>
-        <First />
+        <Home></Home>
       </section>
       <section>
-        <Second />
+        {/* <Second /> */}
+        <About></About>
       </section>
       <section>
-        <Third/>
+        <Services></Services>
       </section>
       <section>
-        <Fourth/>
+        {/* <Fourth/> */}
       </section>
     </div>
   )

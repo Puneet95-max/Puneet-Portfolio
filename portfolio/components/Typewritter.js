@@ -2,7 +2,7 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 
 
-function Typewriters() {
+function Typewritter() {
   return (
     <div className="typewriter text-white text-5xl font-bold font-serif">
       <Typewriter
@@ -19,4 +19,4 @@ function Typewriters() {
   );
 }
 
-export default Typewriters;
+export default Typewritter;

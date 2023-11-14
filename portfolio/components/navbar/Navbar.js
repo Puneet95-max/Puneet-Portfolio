@@ -17,7 +17,7 @@ function Navbar() {
                             <Link href="/">Home</Link>
                         </motion.li>
                         <motion.li whileHover={{ color: 'red' }}>
-                            <Link href="../components/second/Second">About</Link>
+                            <Link href="/about">About</Link>
                         </motion.li>
                         <motion.li whileHover={{ color: 'red' }}>
                             <Link href="/">Services</Link>
