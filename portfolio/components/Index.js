@@ -11,7 +11,7 @@ function Index() {
       </section>
       <section>
         {/* <Second /> */}
-        <About></About>
+        <About ></About>
       </section>
       <section>
         <Services></Services>

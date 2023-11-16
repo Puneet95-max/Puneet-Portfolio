@@ -1,9 +1,21 @@
-import React from 'react'
+import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { NextPage } from 'next';
 
-
-function Navbar() {
+ const  Navbar = () => {
+    const handleScroll = (e) => {
+        // first prevent the default behavior
+        e.preventDefault();
+        // get the href and remove everything before the hash (#)
+        const href = e.currentTarget.href;
+        const targetId = href.replace(/.*\#/, "");
+        // get the element by id and use scrollIntoView
+        const elem = document.getElementById(targetId);
+        elem?.scrollIntoView({
+          behavior: "smooth",
+        });
+    };
     return (
         <div>
             <nav className="  py-5">
@@ -17,10 +29,10 @@ function Navbar() {
                             <Link href="/">Home</Link>
                         </motion.li>
                         <motion.li whileHover={{ color: 'red' }}>
-                            <Link href="/about">About</Link>
+                            <Link href="#section-1" onClick={handleScroll} >About</Link>
                         </motion.li>
                         <motion.li whileHover={{ color: 'red' }}>
-                            <Link href="/">Services</Link>
+                            <Link href="#section-2" onClick={handleScroll} >Services</Link>
                         </motion.li>
                         <motion.li whileHover={{ color: 'red' }}>
                             <Link href="/">Contact</Link>
