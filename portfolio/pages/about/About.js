@@ -4,7 +4,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div className='h-screen  w-full bg-slate-400 px-4 ' id='about '>
+    <div className='h-screen  w-full bg-slate-400 px-4' id='about'>
       <div className='flex flex-row w-full h-full mx-2'>
         <div className='w-2/3 pt-0  flex justify-center flex-col  mx-10 '>
          
